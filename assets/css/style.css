@@ -42,8 +42,10 @@ body {
     color: var(--mainGreenColor);
 }
 .header-buttom {
+    max-width: 1440px;
     display: flex;
     padding: 30px;
+    margin: auto;
 }
 .header-buttom h2 {
     font-weight: 700;
@@ -80,6 +82,10 @@ body {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+}
+main {
+    max-width: 1440px;
+    margin: auto;
 }
    /*      SECTION 1       */
 .section-1 {
@@ -138,7 +144,7 @@ body {
 
 .middle-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 56px;
     margin: 70px 0 ;
 }
@@ -163,9 +169,11 @@ body {
     margin-bottom: 28px;
 
 }
+.users-img {
+    margin-bottom: 18px;
+}
 
-
-.users {
+.users, .member-info, .share-button {
     display: flex;
 }
 .username {
@@ -181,4 +189,103 @@ body {
     letter-spacing: -0.02em;
     color: #66645e;
     margin-left: 16px;
+}
+.member-infocard {
+    background-color: #fff;
+    max-width: 484px;
+    min-height: 412px;
+    border-radius: 16px;
+    border: 4px solid #303031;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 90px 0 24px;
+}
+.member-name {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    margin: 8px 0 8px 16px;
+}
+.member-position {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #66645e;
+    margin-left: 16px;
+}
+.member-about {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin: 24px 0 48px;
+
+}
+.task-card {
+grid-area:task-card;
+border-radius: 16px;
+padding: 28px 60px;
+height: 164px;
+border: 4px solid var(--mainFontColor);
+display: flex;
+justify-content: space-between;
+}
+.task-title {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+.task-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: -0.02em;
+}
+.share-button {
+    width: 80px;
+    height: 32px;
+    border-radius: 40px;
+    background-color: var(--mainGreenColor);
+    margin-left: 26px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 4px 8px;
+    white-space: nowrap;
+    align-items: center;
+
+
+
+}
+.applicants-widget {
+    grid-area: applicants-widget;
+    background-color: #f3f0ea;
+    height: 288px;
+    border: 4px solid var(--mainFontColor);
+    border-radius: 16px;
+
+}
+
+.profile-widget {
+    grid-area: profile-widget;
+    border-radius: 16px;
+    border: 4px solid var(--mainGreenColor);
+    height: 288px;
+
+
+
+}
+
+.profile-widget-container {
+    width: 644px;
+    display: grid;
+    grid-template-areas: 
+    'task-card task-card task-card task-card task-card'
+    'applicants-widget applicants-widget applicants-widget profile-widget profile-widget';
+    gap: 12px;
 }
