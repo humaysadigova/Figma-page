@@ -68,7 +68,7 @@ body {
     color: #66645e;
     margin: 24px 0 40px 0;
 }
-.about-button {
+.section-button {
     background-color: var(--mainGreenColor);
     color: #fff;
     font-size: 18px;
@@ -88,16 +88,16 @@ main {
     margin: auto;
 }
    /*      SECTION 1       */
-.section-1 {
+.card-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 70px 56px;
     margin: 90px 0 0 0 ;
 }
-.section1-description {
+.card-section-description {
     text-align: center;
-    /* width: 895px; */
+    width: 895px;
 }
 .section-title {
     font-size: 48px;
@@ -173,7 +173,7 @@ main {
     margin-bottom: 18px;
 }
 
-.users, .member-info, .share-button {
+.users, .member-info, .share-button, .applicants, .profile, .card-container-2, .card-button-container, .last-section, footer {
     display: flex;
 }
 .username {
@@ -192,14 +192,16 @@ main {
 }
 .member-infocard {
     background-color: #fff;
-    max-width: 484px;
+    width: 484px;
     min-height: 412px;
     border-radius: 16px;
     border: 4px solid #303031;
     padding: 32px 40px;
     display: flex;
     flex-direction: column;
-    margin: 0 90px 0 24px;
+    position: relative;
+    margin: 0 24px 0;
+    box-sizing: border-box;
 }
 .member-name {
     font-weight: 700;
@@ -227,7 +229,7 @@ main {
 grid-area:task-card;
 border-radius: 16px;
 padding: 28px 60px;
-height: 164px;
+min-height: 164px;
 border: 4px solid var(--mainFontColor);
 display: flex;
 justify-content: space-between;
@@ -265,20 +267,73 @@ justify-content: space-between;
 .applicants-widget {
     grid-area: applicants-widget;
     background-color: #f3f0ea;
-    height: 288px;
+    min-height: 288px;
     border: 4px solid var(--mainFontColor);
     border-radius: 16px;
+    padding: 32px 40px ;
 
+}
+.applicants-tile {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+}
+.applicants {
+    padding-top: 24px;
+}
+.name-info {
+    margin-left: 16px;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #aaa8a4 ;
 }
 
 .profile-widget {
     grid-area: profile-widget;
     border-radius: 16px;
     border: 4px solid var(--mainGreenColor);
-    height: 288px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.profile {
+    width: 100%; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-widget a {
+    width: 100%;
+    height: 44px;
+    padding: 12px 24px;
+    background-color: var(--mainFontColor);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    border-radius: 16px;
+    margin-top: 24px;
 
-
-
+}
+.profile img {
+    width: 72px;
+}
+.widget-name {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    margin: 16px 0 4px;
+}
+.widget-position {
+    color: #66645e;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
 }
 
 .profile-widget-container {
@@ -288,4 +343,151 @@ justify-content: space-between;
     'task-card task-card task-card task-card task-card'
     'applicants-widget applicants-widget applicants-widget profile-widget profile-widget';
     gap: 12px;
+}
+.card-container-2 {
+    width: 100%;
+    gap: 28px;
+    padding: 48px 0 64px;
+
+}
+.card-2 {
+    width: 427px;
+    min-height: 216px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.card-title-2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: -0.02em;
+}
+.card-text-2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: -0.02em;
+    margin: 16px 0 24px;
+}
+.card-button-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-button {
+    background-color: var(--mainGreenColor);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.card-section-button {
+    background-color:var(--mainFontColor) ;
+    border-radius: 8px;
+    padding: 20px 24px;
+    color: #fff;
+    font-size: 700;
+    font-size: 18px;
+    align-items: center;
+    margin:0;
+    text-decoration: none;
+}
+.divider {
+    margin-top: 52px;
+}
+.last-section .section-button {
+    margin-top: 40px;
+
+}
+.last-section .container-description-2 {
+    margin-top: 30px;
+}
+footer {
+    justify-content: space-between;
+    padding: 44px 56px;
+}
+.footer-logo {
+    font-family: var(--fontOpenSans);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+}
+.footer-nav-links {
+    display: flex;
+    gap: 40px;
+}
+.footer-nav-links a {
+    text-decoration: none;
+    color: var(--mainFontColor);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+}
+.footer-nav-links li:last-child a {
+    color: var(--mainGreenColor);
+}
+.commit {
+    position: absolute;
+    width: 62px;
+    height: 24px;
+    left: 40px;
+    top: 224px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #66645e;
+    letter-spacing: -0.02em;
+
+}
+.shares {
+    position: absolute;
+    width: 60px;
+    height: 24px;
+    right: 170px;
+    top: 224px;
+    font-size: 16px;
+    color: #66645e;
+    letter-spacing: -0.02em;
+}
+.commit-info {
+    position: absolute;
+    width: 114px;
+    height: 32px;
+    left: 40px;
+    top: 260px;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+
+}
+.shares-info {
+    position: absolute;
+    width: 27px;
+    height: 32px;
+    right: 203px;
+    top: 260px;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+
+}
+.vote-button {
+    width: 404px;
+    background-color: var(--mainFontColor);
+    color: #fff;
+    padding: 12px 24px;
+    position: absolute;
+    top: 324px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
 }
