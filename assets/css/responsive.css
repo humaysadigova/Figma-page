@@ -1,0 +1,97 @@
+
+@media screen and (max-width:800px) {
+    .navbar, h1, .divider, .footer-logo {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+.header-buttom {
+    flex-direction: column-reverse;
+}
+.header-buttom-image {
+    width:290px;
+}
+.header-buttom div {
+    display: flex;
+     justify-content: center;
+}
+.about {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+.header-buttom h2, .section-title {
+    font-size: 30px;
+    line-height: 40px;
+}
+.card-section {
+    padding:20px;
+}
+.card-container, .last-section {
+    flex-direction: column;
+}
+.card {
+    padding: 44px 10px 20px 10px ;
+}
+.middle-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.container-description-2 {
+    margin: 0;
+    text-align: center;
+}
+.members {
+    margin:20px 0 0;
+    max-width: 484px;
+    width: 80%;
+}
+.section-3 {
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.card-container-2 {
+    flex-direction: column;
+    align-items: center;
+}
+.last-section .container-description-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last-section-img {
+    width: 100%;
+}
+.member-infocard {
+    max-width: 484px;
+    width: 100%;
+    margin: 0;
+
+}
+footer {
+    padding: 20px;
+}
+.footer-nav-links {
+    width: 100%;
+    justify-content: space-between;
+}
+}
+@media screen and (max-width:600px) {
+footer {
+     align-items: center;
+     border-top: 1px solid #e7e7e7;
+}
+.footer-nav-links {
+    padding: 10px;
+    width: auto;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: end;
+}
+.footer-logo {
+    display: block;
+        
+}
+}

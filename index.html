@@ -26,6 +26,9 @@
             <li><a href="#">Request early access</a></li>
           </ul>
         </nav>
+        <div class="hamburger">
+          <img src="./assets/images/hamburger.svg" alt="Menu button" />
+        </div>
       </div>
       <div class="header-buttom">
         <div class="about">
@@ -36,8 +39,9 @@
           </p>
           <button class="section-button">Request early access</button>
         </div>
-        <div>
+        <div class="header-buttom-img">
           <img
+            class="header-buttom-image"
             src="./assets/images/header-image.svg"
             alt="header-buttom-image"
           />
@@ -120,11 +124,11 @@
             </div>
           </div>
           <div class="users">
-            <img
+            <!-- <img
               class="users-img"
               src="./assets/images/member3.svg"
               alt="member3"
-            />
+            /> -->
             <div>
               <p class="username">Kas Moss</p>
               <p class="userinfo">100 SHARES</p>
@@ -132,7 +136,7 @@
           </div>
         </div>
       </section>
-      <section class="middle-section">
+      <section class="middle-section section-3">
         <div class="member-infocard">
           <div class="member-info">
             <img src="./assets/images/member4.svg" alt="Jassir Jonis" />
@@ -146,10 +150,14 @@
             we’ll achieve amazing things.
           </p>
           <div>
-            <p class="commit">COMMIT</p>
-            <p class="shares">SHARES</p>
-            <p class="commit-info">10,000 DAI</p>
-            <p class="shares-info">20</p>
+            <div class="caption">
+              <p>COMMIT</p>
+              <p>SHARES</p>
+            </div>
+            <div class="caption-info">
+              <p>10,000 DAI</p>
+              <p>20</p>
+            </div>
           </div>
           <a href="#" class="vote-button">Go to vote</a>
         </div>
@@ -275,7 +283,11 @@
           <button class="section-button">Request early access</button>
         </div>
         <div>
-          <img src="./assets/images/s6img.svg" alt="Last section image" />
+          <img
+            class="last-section-img"
+            src="./assets/images/s6img.svg"
+            alt="Last section image"
+          />
         </div>
       </section>
     </main>
